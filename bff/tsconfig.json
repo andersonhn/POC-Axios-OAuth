@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2018"],
+        "module": "CommonJS",
+        "target": "ES2018",
+        "strict": true,
+        "jsx": "react-native",
+        "outDir": "../dist",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+        "node_modules",
+        "bff-mobile-customer-npm-driver"
+    ]
+}
