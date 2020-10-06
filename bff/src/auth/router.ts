@@ -22,6 +22,11 @@ export function createAuthRouter(
         controller.failRequest(request, response, next).catch(next)
     )
     .post(
+      '/failGetUser',
+      (request: Request, response: Response, next: NextFunction) =>
+        controller.failGetUser(request, response, next).catch(next)
+    )
+    .post(
       '/refreshToken',
       (request: Request, response: Response, next: NextFunction) =>
         controller.refreshToken(request, response, next).catch(next)

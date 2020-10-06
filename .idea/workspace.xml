@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efcad303-266a-4a38-8c72-327dcc59b883" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bff/src/auth/controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/src/auth/router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/src/auth/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/src/configuration/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/src/configuration/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/src/health/controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/src/health/router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bff/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poc_axios/scr/driver/driver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poc_axios/scr/driver/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poc_axios/scr/layouts/home/home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poc_axios/scr/utils/localStorage/localStorage.util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poc_axios/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/src/auth/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bff/src/auth/controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bff/src/auth/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bff/src/auth/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc_axios/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/poc_axios/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc_axios/scr/driver/driver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc_axios/scr/driver/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc_axios/scr/utils/localStorage/localStorage.util.ts" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +23,11 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file leaf-file-name="router.ts" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/bff/src/auth/router.ts">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="360">
+                  <state relative-caret-position="320">
                     <caret line="18" column="9" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="9" />
                     <folding>
                       <element signature="e#0#66#0" expanded="true" />
@@ -45,7 +40,7 @@
               <entry file="file://$PROJECT_DIR$/bff/src/auth/controller.ts">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="490">
-                    <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+                    <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
                   </state>
                 </provider>
               </entry>
@@ -56,11 +51,11 @@
     </window>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="routes.ts" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="routes.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bff/src/configuration/routes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="100">
               <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -72,7 +67,7 @@
       <file leaf-file-name="server.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bff/src/configuration/server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="440">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -84,35 +79,17 @@
       <file leaf-file-name="login.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="63" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.tsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="driver.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/driver.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -120,32 +97,8 @@
       <file leaf-file-name="home.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/home/home.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="localStorage.util.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/poc_axios/scr/utils/localStorage/localStorage.util.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="types.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/types.ts">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="25" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -231,12 +184,14 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,14 +299,13 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/poc_axios" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
@@ -436,45 +390,77 @@
       <option name="presentableId" value="Default" />
       <updated>1601915216271</updated>
       <workItem from="1601915217702" duration="15810000" />
+      <workItem from="1601982423089" duration="50000" />
+      <workItem from="1602005032272" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15810000" />
+    <option name="totallyTimeSpent" value="15871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13539445" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20226537" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -488,77 +474,131 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bff/configuration/routes.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bff/auth/service.ts">
+    <entry file="file://$PROJECT_DIR$/bff/src/configuration/routes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="100">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bff/auth/controller.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bff/auth/router.js">
+    <entry file="file://$PROJECT_DIR$/bff/src/configuration/server.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bff/auth/middlewares.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/helmet/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bff/auth/middlewares.ts">
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+        <state relative-caret-position="20">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/home/home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bff/src/auth/router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="9" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.tsx">
+    <entry file="file://$PROJECT_DIR$/bff/src/auth/controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="1220">
+          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bff/src/configuration/routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/app.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/bff/src/configuration/server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/app/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="63" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/.prettierrc.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/driver.ts" />
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/home/home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/utils/localStorage/localStorage.util.ts" />
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/types.ts" />
+    <entry file="file://$PROJECT_DIR$/bff/src/auth/router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bff/src/auth/controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bff/auth/service.ts" />
+    <entry file="file://$PROJECT_DIR$/src/bff/auth/router.js" />
+    <entry file="file://$PROJECT_DIR$/src/bff/auth/middlewares.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/helmet/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/bff/auth/middlewares.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/App.tsx" />
     <entry file="file://$PROJECT_DIR$/bff/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -580,15 +620,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bff/src/health/controller.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bff/src/health/controller.spec.ts" />
     <entry file="file://$PROJECT_DIR$/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -596,22 +628,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/poc_axios/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#20#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/metro.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bff/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -634,9 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/scr/routes.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/poc_axios/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -648,9 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#116#142#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,76 +684,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/types.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/scr/utils/localStorage/localStorage.util.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bff/src/configuration/server.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/types.ts" />
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/utils/localStorage/localStorage.util.ts" />
     <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/home/home.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/driver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/driver/driver.ts" />
     <entry file="file://$PROJECT_DIR$/bff/src/auth/router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="320">
           <caret line="18" column="9" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
@@ -751,17 +707,41 @@
     <entry file="file://$PROJECT_DIR$/bff/src/auth/controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bff/src/configuration/routes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="100">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bff/src/configuration/server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/layouts/login/login.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_axios/scr/routes/routes.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

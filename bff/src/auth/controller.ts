@@ -15,17 +15,22 @@ export interface AuthController {
     request: Request,
     response: Response,
     next: NextFunction
-  ): Promise<unknown>;
+  ): Promise<void>;
+  failGetUser(
+    request: Request,
+    response: Response,
+    next: NextFunction
+  ): Promise<void>;
   refreshToken(
     request: Request,
     response: Response,
     next: NextFunction
-  ): Promise<unknown>;
+  ): Promise<void>;
   refreshTokenInvalid(
     request: Request,
     response: Response,
     next: NextFunction
-  ): Promise<unknown>;
+  ): Promise<void>;
 }
 
 export class AuthControllerImpl implements AuthController {
@@ -44,7 +49,7 @@ export class AuthControllerImpl implements AuthController {
     response: Response,
     next: NextFunction
   ): Promise<void> {
-    response.status(201).json();;
+    response.status(201).json();
     return next();
   }
 
@@ -53,7 +58,16 @@ export class AuthControllerImpl implements AuthController {
     response: Response,
     next: NextFunction
   ): Promise<void> {
-    response.status(400).json();
+    response.status(401).json();
+    return next();
+  }
+
+  public async failGetUser(
+    request: Request,
+    response: Response,
+    next: NextFunction
+  ): Promise<void> {
+    response.status(401).json();
     return next();
   }
 
@@ -62,7 +76,7 @@ export class AuthControllerImpl implements AuthController {
     response: Response,
     next: NextFunction
   ): Promise<void> {
-    response.status(200).json({ accessToken: '7YIElUxwOcz0s4avkzz6'});
+    response.status(201).json({ accessToken: '7YIElUxwOcz0s4avkzz6', refreshToken: 'rdlnTmIoNtoNrRgSiv28'});
     return next();
   }
 
@@ -71,7 +85,7 @@ export class AuthControllerImpl implements AuthController {
     response: Response,
     next: NextFunction
   ): Promise<void> {
-    response.status(403).json();;
+    response.status(401).json();
     return next();
   }
 }
