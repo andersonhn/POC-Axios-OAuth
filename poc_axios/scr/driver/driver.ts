@@ -1,11 +1,11 @@
-import Axios, {AxiosError, AxiosInstance, AxiosResponse} from 'axios';
+import Axios, {AxiosInstance, AxiosResponse} from 'axios';
 import LocalStorageService, {LocalStorage} from '../utils/localStorage/localStorage.util';
 import {Credentials, LoginResponse} from "./types";
 
 const localStorage: LocalStorage = new LocalStorageService();
 
 const BASE_URL =
-  'http://192.168.21.45:3000/bff/';
+  'http://192.168.21.31:3000/bff/';
 
 const defaultConfig: CustomerBffDriverConfig = {
   httpClient: Axios.create({
@@ -25,13 +25,20 @@ export interface CustomerBffDriver {
   refreshTokenInvalid(refreshToken: string): Promise<LoginResponse>;
 }
 
-export class CustomerBffDriverDefault implements CustomerBffDriver {
+class CustomerBffDriverDefault implements CustomerBffDriver {
+
   public constructor(private config: CustomerBffDriverConfig = defaultConfig) {
+
     config.httpClient.interceptors.request.use(
       async (config) => {
-        console.log(config.url);
-        if (config.url !== '/login') {
+        console.log('request', config.url);
+        if (
+          config.url !== '/login' &&
+          config.url !== '/refreshToken' &&
+          config.url !== '/refreshTokenInvalid'
+        ) {
           const token = await localStorage.getAccessToken();
+          console.log('Token', token);
           config.headers = {
             'Authorization': `Bearer ${token}`,
           };
@@ -45,27 +52,53 @@ export class CustomerBffDriverDefault implements CustomerBffDriver {
 
     config.httpClient.interceptors.response.use(
       (response) => {
+        console.log('response Fulfilled', response);
         return response
-      }, async function (error) {
+      },
+      async function (error) {
+        console.log(error.config);
+
         const originalRequest = error.config;
-        if (error.response.status === 401 && originalRequest.url === 'http://192.168.21.45:3000/bff/auth/refreshToken') {
-          // router
+
+        console.info('response', error.response.status, originalRequest.url);
+
+        if (error.response.status === 401 && (
+          originalRequest.url === '/refreshToken' ||
+          originalRequest.url === '/refreshTokenInvalid')) {
+          console.log('logout');
+          return Promise.reject(error);
         }
 
-        if (error.response.status === 401 && !originalRequest._retry) {
+        if (error.response?.status === 401 && !originalRequest._retry) {
           originalRequest._retry = true;
-          const refreshToken = localStorage.getRefreshToken();
-          console.log('refreshToken', refreshToken);
-          return config.httpClient.post('/auth/refreshToken',{
-            refresh_token: refreshToken
-          }).then((res: AxiosResponse) => {
-            console.log('login', refreshToken);
-            if (res.status === 201) {
-              localStorage.setToken(res.data);
-              config.httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getAccessToken();
-              return config.httpClient(originalRequest);
-            }
-          })
+          const refreshToken = await localStorage.getRefreshToken();
+          console.log('getRefreshTooken', refreshToken);
+
+          if (originalRequest.url === '/failRequest') {
+            return config.httpClient.post('/refreshToken',{refreshToken: refreshToken})
+              .then((res: AxiosResponse) => {
+                console.log('request RefreshToken Response');
+                if (res.status === 201) {
+                  // localStorage.setToken(res.data);
+                  defaultConfig.httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getAccessToken();
+                  return config.httpClient(originalRequest);
+                }
+              })
+          } else {
+            return config.httpClient.post('/refreshTokenInvalid',{refreshToken: refreshToken})
+              .then((res: AxiosResponse) => {
+                console.log('request RefreshToken Response');
+                if (res.status === 201) {
+                  // localStorage.setToken(res.data);
+                  defaultConfig.httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getAccessToken();
+                  return config.httpClient(originalRequest);
+                }
+              })
+          }
+
+        } else {
+          console.log('Double fail request');
+          console.log('Possibly logout');
         }
         return Promise.reject(error);
       }
@@ -90,6 +123,12 @@ export class CustomerBffDriverDefault implements CustomerBffDriver {
       .then((response: any) => response.data);
   }
 
+  async failGetUser(): Promise<any> {
+    return await this.config.httpClient
+      .post('/failGetUser')
+      .then((response: any) => response.data);
+  }
+
   async refreshToken(refreshToken: string): Promise<LoginResponse> {
     return await this.config.httpClient
       .post('/refreshToken', refreshToken)
@@ -102,3 +141,5 @@ export class CustomerBffDriverDefault implements CustomerBffDriver {
       .then((response: any) => response.data);
   }
 }
+
+export default new CustomerBffDriverDefault();

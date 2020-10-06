@@ -1,5 +1,5 @@
 import React from 'react';
-import {CustomerBffDriver, CustomerBffDriverDefault} from "../../driver/driver";
+import Service from "../../driver/driver";
 import {StackNavigationProp} from "@react-navigation/stack/lib/typescript/src/types";
 import {
   View,
@@ -15,18 +15,17 @@ export interface LoginProps {
 }
 
 export const Login: React.FC<LoginProps> = ({ navigation }) => {
-  const service: CustomerBffDriver = new CustomerBffDriverDefault();
   const localStorage: LocalStorage = new LocalStorageService();
 
   const login = async (): Promise<void> => {
-    const response = await service.login({username: 'anderson', password: '123'});
+    const response = await Service.login({username: 'anderson', password: '123'});
     console.info('Tokens:', response);
-    localStorage.setToken(response);
+    localStorage.setToken(response!);
     navigation.navigate(RouteTypes.HOME);
   };
 
   const health = async (): Promise<void> => {
-    const response = await service.getHealth();
+    const response = await Service.getHealth();
     console.info('status health', response)
   };
 

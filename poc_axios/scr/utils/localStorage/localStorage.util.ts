@@ -5,8 +5,8 @@ import {LoginResponse} from "../../driver/types";
 
 export interface LocalStorage {
   setToken(token: LoginResponse): void;
-  getAccessToken(): string;
-  getRefreshToken(): string;
+  getAccessToken(): Promise<string | null>;
+  getRefreshToken(): Promise<string | null>;
   clearToken(): void;
 }
 
@@ -17,11 +17,11 @@ class LocalStorageService implements LocalStorage {
     await AsyncStorage.setItem('refresh_token', token.refreshToken);
   }
 
-  async getAccessToken(): Promise<string> {
+  async getAccessToken(): Promise<string | null> {
     return AsyncStorage.getItem('access_token');
   }
 
-  async getRefreshToken(): Promise<string>  {
+  async getRefreshToken(): Promise<string | null>  {
     return AsyncStorage.getItem('refresh_token');
   }
 
