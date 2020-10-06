@@ -1,11 +1,12 @@
 import Axios, {AxiosInstance, AxiosResponse} from 'axios';
+import React from 'react';
 import LocalStorageService, {LocalStorage} from '../utils/localStorage/localStorage.util';
-import {Credentials, LoginResponse} from "./types";
+import { Credentials, LoginResponse} from "./types";
 
 const localStorage: LocalStorage = new LocalStorageService();
 
 const BASE_URL =
-  'http://192.168.21.31:3000/bff/';
+  'http://192.168.21.31:3000/bff/'; // LocalHost IP
 
 const defaultConfig: CustomerBffDriverConfig = {
   httpClient: Axios.create({
@@ -21,6 +22,7 @@ export interface CustomerBffDriver {
   getHealth(): Promise<any>;
   login(credentials: Credentials): Promise<LoginResponse>;
   failRequest(): Promise<any>;
+  failGetUser(): Promise<any>;
   refreshToken(refreshToken: string): Promise<LoginResponse>;
   refreshTokenInvalid(refreshToken: string): Promise<LoginResponse>;
 }
@@ -56,8 +58,6 @@ class CustomerBffDriverDefault implements CustomerBffDriver {
         return response
       },
       async function (error) {
-        console.log(error.config);
-
         const originalRequest = error.config;
 
         console.info('response', error.response.status, originalRequest.url);
@@ -65,14 +65,13 @@ class CustomerBffDriverDefault implements CustomerBffDriver {
         if (error.response.status === 401 && (
           originalRequest.url === '/refreshToken' ||
           originalRequest.url === '/refreshTokenInvalid')) {
-          console.log('logout');
           return Promise.reject(error);
         }
 
         if (error.response?.status === 401 && !originalRequest._retry) {
           originalRequest._retry = true;
           const refreshToken = await localStorage.getRefreshToken();
-          console.log('getRefreshTooken', refreshToken);
+          console.log('getRefreshToken', refreshToken);
 
           if (originalRequest.url === '/failRequest') {
             return config.httpClient.post('/refreshToken',{refreshToken: refreshToken})

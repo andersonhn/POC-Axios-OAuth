@@ -1,8 +1,6 @@
 import {AsyncStorage} from "react-native";
 import {LoginResponse} from "../../driver/types";
 
-
-
 export interface LocalStorage {
   setToken(token: LoginResponse): void;
   getAccessToken(): Promise<string | null>;

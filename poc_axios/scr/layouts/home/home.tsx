@@ -7,8 +7,9 @@ import {
   Button
 } from 'react-native';
 import {default as LocalStorageService, LocalStorage} from "../../utils/localStorage/localStorage.util";
-import Service from "../../driver/driver";
 import {RouteTypes} from "../../routes/routes";
+import {useService} from "../../hook/service.hook";
+import {AppContext} from "../../context/appContext";
 
 export interface HomeProps {
   navigation: StackNavigationProp<any>;
@@ -16,21 +17,22 @@ export interface HomeProps {
 
 export const Home: React.FC<HomeProps> = ({ navigation }) => {
 
+  const appContext = useContext(AppContext);
+  const service = useService(navigation);
   const localStorage: LocalStorage = new LocalStorageService();
 
   const logout = () => {
     localStorage.clearToken();
+    appContext.setAuth(false);
     navigation.navigate(RouteTypes.LOGIN);
   };
 
   const failRequest = async (): Promise<void> => {
-    const response = await Service.failRequest();
-    console.info('fail Request', response)
+    await service.failRequest();
   };
 
   const logoutAfterRefreshFail = async (): Promise<void> => {
-    const response = await Service.failGetUser();
-    console.info('fail Request', response)
+    await service.failGetUser();
   };
 
   return (
