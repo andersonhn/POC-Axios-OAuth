@@ -17,9 +17,7 @@ export const AppStack = createStackNavigator<AppStackRoutesParams>();
 
 export const AppRoutes: React.FC = () => {
   return (
-    <AppStack.Navigator
-      mode="modal"
-      initialRouteName={AppRouteTypes.LOGIN}>
+    <AppStack.Navigator mode="modal" initialRouteName={AppRouteTypes.LOGIN}>
       <AppStack.Screen component={Login} name={AppRouteTypes.LOGIN} />
     </AppStack.Navigator>
   );

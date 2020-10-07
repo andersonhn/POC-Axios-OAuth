@@ -4,7 +4,7 @@ import { View, Text, SafeAreaView, Button } from 'react-native';
 import { RouteTypes } from '../../routes';
 import { useService } from '../../hook/service.hook';
 import { logMessage } from '../../utils/logger/logger';
-import {useAppContext} from "../../hook/context.hook";
+import { useAppContext } from '../../hook/context.hook';
 
 export interface LoginProps {
   navigation: StackNavigationProp<any>;
@@ -12,7 +12,7 @@ export interface LoginProps {
 
 export const Login: React.FC<LoginProps> = ({ navigation }) => {
   const service = useService();
-  const {context} = useAppContext();
+  const { context } = useAppContext();
 
   const loginHandle = async (): Promise<void> => {
     const response = await service.login({
@@ -35,7 +35,10 @@ export const Login: React.FC<LoginProps> = ({ navigation }) => {
           <Text>accessToken: {context.user?.accessToken}</Text>
           <Text>refreshToken: {context.user?.refreshToken}</Text>
           <Text>isAuth: {context.isAuth ? 'true' : 'false'}</Text>
-          <Text>isRefreshTokenValid: {context.isRefreshTokenValid ? 'true' : 'false'}</Text>
+          <Text>
+            isRefreshTokenValid:{' '}
+            {context.isRefreshTokenValid ? 'true' : 'false'}
+          </Text>
         </View>
         <View>
           <Button title={'login'} onPress={loginHandle} />

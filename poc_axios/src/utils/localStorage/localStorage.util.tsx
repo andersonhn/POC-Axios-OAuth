@@ -6,7 +6,7 @@ export interface LocalStorage {
   setUser(userEmail: string): void;
   getAccessToken(): Promise<string | null>;
   getRefreshToken(): Promise<string | null>;
-  getUserEmail(): Promise<string | null>
+  getUserEmail(): Promise<string | null>;
   clearToken(): void;
 }
 

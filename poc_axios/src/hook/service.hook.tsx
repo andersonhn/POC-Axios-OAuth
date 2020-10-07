@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import Service from '../driver/driver';
 import { RouteTypes } from '../routes';
 import { logMessage } from '../utils/logger/logger';
-import {useAppContext} from "./context.hook";
+import { useAppContext } from './context.hook';
 
 export type ServiceHook = {
   login: (credentials: Credentials) => Promise<LoginResponse | undefined>;
@@ -13,7 +13,7 @@ export type ServiceHook = {
 };
 
 export const useService = (): ServiceHook => {
-  const {signOut, signIn} = useAppContext();
+  const { signOut, signIn } = useAppContext();
 
   const authError = useCallback((status: number) => {
     if (status === 401) {
@@ -21,10 +21,7 @@ export const useService = (): ServiceHook => {
         logMessage('Service Hook Auth Error', 'Fail To refresh Token'),
       );
       console.info(
-        logMessage(
-          'Service Hook',
-          'Set Auth and Clear LocalStorage',
-        ),
+        logMessage('Service Hook', 'Set Auth and Clear LocalStorage'),
       );
       signOut(true);
     }

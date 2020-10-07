@@ -17,9 +17,7 @@ export const AuthStack = createStackNavigator<AuthStackRoutesParams>();
 
 export const AuthRoutes: React.FC = () => {
   return (
-    <AuthStack.Navigator
-      mode="modal"
-      initialRouteName={AuthRouteTypes.HOME}>
+    <AuthStack.Navigator mode="modal" initialRouteName={AuthRouteTypes.HOME}>
       <AuthStack.Screen component={Home} name={AuthRouteTypes.HOME} />
     </AuthStack.Navigator>
   );

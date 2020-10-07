@@ -1,7 +1,9 @@
-import {useContext} from "react";
-import {AppContext, AppContextAction} from "../context/appContext";
-import {Credentials, LoginResponse} from "../driver/types";
-import LocalStorageService, {LocalStorage} from "../utils/localStorage/localStorage.util";
+import { useContext } from 'react';
+import { AppContext, AppContextAction } from '../context/appContext';
+import { Credentials, LoginResponse } from '../driver/types';
+import LocalStorageService, {
+  LocalStorage,
+} from '../utils/localStorage/localStorage.util';
 
 export type AppContextHook = {
   context: AppContextAction;
@@ -16,17 +18,25 @@ export const useAppContext = (): AppContextHook => {
 
   const signIn = (user: Credentials, token: LoginResponse) => {
     context.setAuth(true);
-    context.setUser({accessToken: token.accessToken, refreshToken: token.refreshToken, userEmail: user.username});
+    context.setUser({
+      accessToken: token.accessToken,
+      refreshToken: token.refreshToken,
+      userEmail: user.username,
+    });
     localStorage.setToken(token);
     localStorage.setUser(user.username);
   };
 
   const signOut = (RefreshTokenInvalid?: boolean) => {
     context.setAuth(false);
-    if(RefreshTokenInvalid) {
+    if (RefreshTokenInvalid) {
       context.setRefreshTokenValid(false);
     }
-    context.setUser((prevState) => ({...prevState, accessToken: undefined, refreshToken: undefined}));
+    context.setUser((prevState) => ({
+      ...prevState,
+      accessToken: undefined,
+      refreshToken: undefined,
+    }));
     localStorage.clearToken();
   };
 
@@ -34,6 +44,6 @@ export const useAppContext = (): AppContextHook => {
     context,
     localStorage,
     signIn,
-    signOut
-  }
+    signOut,
+  };
 };

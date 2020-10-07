@@ -1,17 +1,17 @@
 import React, { Dispatch, SetStateAction } from 'react';
 
 export type AuthContextAction = {
-  userEmail?: string,
-  accessToken?: string,
-  refreshToken?: string,
-}
+  userEmail?: string;
+  accessToken?: string;
+  refreshToken?: string;
+};
 
 export type AppContextAction = {
   user?: AuthContextAction;
-  setUser: Dispatch<SetStateAction<AuthContextAction>>
+  setUser: Dispatch<SetStateAction<AuthContextAction>>;
   isAuth?: boolean;
   setAuth: Dispatch<SetStateAction<boolean>>;
-  isRefreshTokenValid?: boolean
+  isRefreshTokenValid?: boolean;
   setRefreshTokenValid: Dispatch<SetStateAction<boolean>>;
 };
 
@@ -23,5 +23,5 @@ export const AppContext = React.createContext<AppContextInterface>({
   isRefreshTokenValid: undefined,
   setRefreshTokenValid: () => {},
   user: undefined,
-  setUser: () => {}
+  setUser: () => {},
 });
