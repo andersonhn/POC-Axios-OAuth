@@ -1,5 +1,5 @@
-import {AsyncStorage} from "react-native";
-import {LoginResponse} from "../../driver/types";
+import { AsyncStorage } from 'react-native';
+import { LoginResponse } from '../../driver/types';
 
 export interface LocalStorage {
   setToken(token: LoginResponse): void;
@@ -9,7 +9,6 @@ export interface LocalStorage {
 }
 
 class LocalStorageService implements LocalStorage {
-
   async setToken(token: LoginResponse) {
     await AsyncStorage.setItem('access_token', token.accessToken);
     await AsyncStorage.setItem('refresh_token', token.refreshToken);
@@ -19,7 +18,7 @@ class LocalStorageService implements LocalStorage {
     return AsyncStorage.getItem('access_token');
   }
 
-  async getRefreshToken(): Promise<string | null>  {
+  async getRefreshToken(): Promise<string | null> {
     return AsyncStorage.getItem('refresh_token');
   }
 
