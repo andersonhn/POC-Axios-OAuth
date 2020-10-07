@@ -105,7 +105,7 @@ config.httpClient.interceptors.response.use(
 
 ### Change the BASE_URL (192.168.21.31) with your machine ip
 
-Location = porc_axios\scr\driver\driver.tsx
+Location = porc_axios\src\driver\driver.tsx
 ```
 const BASE_URL =
   'http://192.168.21.31:3000/bff/'; // LocalHost IP
