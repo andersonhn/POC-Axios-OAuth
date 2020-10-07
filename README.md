@@ -16,6 +16,8 @@ interceptors are functions that Axios calls for every request. You can use inter
 
 #### Request Interceptor
 
+
+
 ```
   config.httpClient.interceptors.request.use(
     async (config) => {
