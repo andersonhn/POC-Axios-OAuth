@@ -1,24 +1,25 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types';
-import { View, SafeAreaView, Button } from 'react-native';
-import { RouteTypes } from '../../routes/routes';
+import { View, Text, SafeAreaView, Button } from 'react-native';
+import { RouteTypes } from '../../routes';
 import { useService } from '../../hook/service.hook';
 import { logMessage } from '../../utils/logger/logger';
+import {useAppContext} from "../../hook/context.hook";
 
 export interface LoginProps {
   navigation: StackNavigationProp<any>;
 }
 
 export const Login: React.FC<LoginProps> = ({ navigation }) => {
-  const service = useService(navigation);
+  const service = useService();
+  const {context} = useAppContext();
 
   const loginHandle = async (): Promise<void> => {
     const response = await service.login({
-      username: 'anderson',
-      password: '123',
+      username: 'anderson@gmail.com',
+      password: 'SuperPassword',
     });
     console.info(logMessage('Login', 'Token acquired', response));
-    navigation.navigate(RouteTypes.HOME);
   };
 
   const health = async (): Promise<void> => {
@@ -29,6 +30,13 @@ export const Login: React.FC<LoginProps> = ({ navigation }) => {
   return (
     <>
       <SafeAreaView>
+        <View>
+          <Text>User: {context.user?.userEmail}</Text>
+          <Text>accessToken: {context.user?.accessToken}</Text>
+          <Text>refreshToken: {context.user?.refreshToken}</Text>
+          <Text>isAuth: {context.isAuth ? 'true' : 'false'}</Text>
+          <Text>isRefreshTokenValid: {context.isRefreshTokenValid ? 'true' : 'false'}</Text>
+        </View>
         <View>
           <Button title={'login'} onPress={loginHandle} />
         </View>
