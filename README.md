@@ -4,46 +4,41 @@ This Poc shows a simple demostration of the axios interception.
 # Description:
 the POC-Axios_Oauth repository posses a bff, a react native application and a axios driver.
 
-## BFF
-
-## React Native
-
-## Axios
-
 ### Interceptor 
 
 interceptors are functions that Axios calls for every request. You can use interceptors to transform the request before Axios sends it, or transform the response before Axios returns the response to your code.
 
 #### Request Interceptor
 
-
-
 ```
-  config.httpClient.interceptors.request.use(
-    async (config) => {
-      console.log('request', config.url);
-      if (
-        config.url !== '/login' &&
-        config.url !== '/refreshToken' &&
-        config.url !== '/refreshTokenInvalid'
-      ) {
-        const token = await localStorage.getAccessToken();
-        console.log('Token', token);
-        config.headers = {
-          'Authorization': `Bearer ${token}`,
-        };
-      }
-      return config;
-    },
-    (error) => {
-      Promise.reject(error)
+//...
+config.httpClient.interceptors.request.use(
+  async (config) => {
+    console.log('request', config.url);
+    if (
+      config.url !== '/login' &&
+      config.url !== '/refreshToken' &&
+      config.url !== '/refreshTokenInvalid'
+    ) {
+      const token = await localStorage.getAccessToken();
+      console.log('Token', token);
+      config.headers = {
+        'Authorization': `Bearer ${token}`,
+      };
     }
-  );
+    return config;
+  },
+  (error) => {
+    Promise.reject(error)
+  }
+);
+//...
 ```
 
 #### Response Interceptor
 
 ```
+//...
 config.httpClient.interceptors.response.use(
   (response) => {
     console.log('response Fulfilled', response);
@@ -94,6 +89,7 @@ config.httpClient.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+//...
 ```
 
 # How to run
