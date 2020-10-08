@@ -182,6 +182,7 @@ export const useService = (): ServiceHook => {
 ```
 
 ### Context Hook
+A simple abstraction of the context and localStorage.
 
 ```
 export type AppContextHook = {
@@ -255,7 +256,6 @@ export default LocalStorageService;
 ```
 
 ## Authenticated Routes
-
 https://reactnavigation.org/docs/auth-flow/
 
 ### App Routes
