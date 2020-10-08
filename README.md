@@ -255,6 +255,8 @@ export default LocalStorageService;
 
 ## Authenticated Routes
 
+https://reactnavigation.org/docs/auth-flow/
+
 ### App Routes
 
 ```
