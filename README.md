@@ -1,5 +1,5 @@
 # POC-Axios-OAuth
-This Poc shows a simple demostration of the axios interception. 
+This Poc shows a simple demostration of the axios interception and other implementations. 
  
 # Description:
 the POC-Axios_Oauth repository posses a bff, a react native application and a axios driver.
