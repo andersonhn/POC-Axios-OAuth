@@ -211,7 +211,7 @@ export const useAppContext = (): AppContextHook => {
 ```
 
 ## LocalStorage
-A layer with all AsyncStorage functions. If you need to set, get or remove an item from the warehouse, this is the place.
+A layer with all AsyncStorage functions. If you need to set, get or remove an item from the localStorage, this is the place.
 
 ```
 export interface LocalStorage {
