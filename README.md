@@ -4,8 +4,10 @@ This Poc shows a simple demostration of the axios interception and other impleme
 # Description:
 the POC-Axios_Oauth repository posses a bff, a react native application and a axios driver.
 
-### Interceptor 
+## Axios
+Axios is an HTTP client, which works both in the browser and in node.js. The library is basically an API that knows how to interact with both XMLHttpRequest and a node's http interface.
 
+### Interceptor 
 interceptors are functions that Axios calls for every request. You can use interceptors to transform the request before Axios sends it, or transform the response before Axios returns the response to your code.
 
 #### Request Interceptor
@@ -139,11 +141,11 @@ config.httpClient.interceptors.response.use(
 );
 //...
 ```
-# Hooks
+## Hooks
 
 [React Native Hooks](https://reactjs.org/docs/hooks-intro.html)
 
-## Service Hook
+### Service Hook
 
 Works like a middleware between driver and layout. 
 
@@ -179,7 +181,7 @@ export const useService = (): ServiceHook => {
 };
 ```
 
-## Context Hook
+### Context Hook
 
 ```
 export type AppContextHook = {
@@ -208,7 +210,7 @@ export const useAppContext = (): AppContextHook => {
 };
 ```
 
-# LocalStorage
+## LocalStorage
 
 ```
 export interface LocalStorage {
@@ -251,9 +253,9 @@ class LocalStorageService implements LocalStorage {
 export default LocalStorageService;
 ```
 
-# Authenticated Routes
+## Authenticated Routes
 
-## App Routes
+### App Routes
 
 ```
 export enum AuthRouteTypes {
@@ -276,7 +278,7 @@ export const AuthRoutes: React.FC = () => {
 
 ```
 
-## Auth Routes
+### Auth Routes
 
 ```
 export enum AppRouteTypes {
@@ -298,7 +300,7 @@ export const AppRoutes: React.FC = () => {
 };
 ```
 
-## Routes
+### Routes
 
 ```
 export const Routes: React.FC = () => {
